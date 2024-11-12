@@ -16,7 +16,7 @@ import com.apiparkeo.parkeo.Repositories.ConfigRepository;
 
 @RestController
 @RequestMapping("/apiparkeo")
-@CrossOrigin(origins = "http://localhost:5173/")
+@CrossOrigin(origins = "https://juniorsierra18.github.io")
 public class ConfigurationControllers {
     @Autowired
     private ConfigRepository configRepository;
