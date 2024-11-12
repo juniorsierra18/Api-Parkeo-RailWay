@@ -32,7 +32,7 @@ public class ConfigurationControllers {
         return configRepository.save(configuration);
     }
     
-    @PutMapping("/users/{id}")
+    @PutMapping("/config/{id}")
     public Configuration updateUser(@PathVariable Long id, @RequestBody Configuration detailConfig){
         Configuration configuration = configRepository.findById(id)
         .orElseThrow(() -> new RuntimeException("No Config found with ID: " + id));
@@ -43,7 +43,7 @@ public class ConfigurationControllers {
         return configRepository.save(configuration);
     }
 
-    @DeleteMapping("/users/{id}")
+    @DeleteMapping("/config/{id}")
     public String deleteUser(@PathVariable Long id){
         Configuration configuration = configRepository.findById(id)
         .orElseThrow(() -> new RuntimeException("No Config found with ID: " + id));
