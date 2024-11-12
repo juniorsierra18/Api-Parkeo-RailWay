@@ -18,7 +18,7 @@ import com.apiparkeo.parkeo.Repositories.UserRepository;
 
 @RestController
 @RequestMapping("/apiparkeo")
-@CrossOrigin(origins = "http://localhost:5173/")
+@CrossOrigin(origins = "http://localhost:5173")
 public class UserControllers {
 
     @Autowired
